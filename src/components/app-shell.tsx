@@ -11,7 +11,7 @@ type HealthState = "checking" | "ready" | "offline";
 
 const navigation = [
   { to: "/" as const, label: "Home", icon: Home },
-  { to: "/assessment" as const, label: "Assessment", icon: Activity },
+  { to: "/assessment" as const, label: "Prediction\u00a0", icon: Activity },
   { to: "/about" as const, label: "About", icon: Info },
 ];
 
