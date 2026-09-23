@@ -17,7 +17,7 @@ const navigation = [
 
 const pageTitles: Record<string, string> = {
   "/": "Operations Overview",
-  "/assessment": "Machine Assessment",
+  "/assessment": "Machine Prediction",
   "/about": "System Information",
 };
 
