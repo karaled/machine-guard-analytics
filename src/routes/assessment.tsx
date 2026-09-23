@@ -87,7 +87,7 @@ function AssessmentPage() {
             <div className="flex items-center justify-between gap-4 border-t border-border bg-muted/45 px-6 py-5 md:px-8"><p className="hidden text-xs text-muted-foreground sm:block">Values are sent securely to the configured Flask service.</p><Button type="submit" size="lg" disabled={loading} className="w-full sm:w-auto">{loading ? <><LoaderCircle className="animate-spin" size={17} />Assessing machine condition...</> : <>Predict Machine Condition <ArrowRight size={17} /></>}</Button></div>
           </form>
           <aside className="space-y-4">
-            <div className="border border-border bg-secondary p-6 text-secondary-foreground shadow-sm"><Activity size={24} className="text-sidebar-primary" /><h3 className="mt-5 font-bold">Assessment Process</h3><p className="mt-2 text-sm leading-6 text-sidebar-muted">Your inputs are processed by the saved pipeline, then evaluated by the trained prediction model.</p></div>
+            <div className="border border-border bg-secondary p-6 text-secondary-foreground shadow-sm"><Activity size={24} className="text-sidebar-primary" /><h3 className="mt-5 font-bold">Prediction{"\u00a0"} Process</h3><p className="mt-2 text-sm leading-6 text-sidebar-muted">Your inputs are processed by the saved pipeline, then evaluated by the trained prediction model.</p></div>
             <div className="border border-border bg-card p-6"><p className="text-xs font-bold uppercase tracking-[0.12em] text-primary">Important</p><p className="mt-3 text-sm leading-6 text-muted-foreground">MachineGuard provides decision support. Always follow site safety procedures and qualified maintenance guidance.</p></div>
           </aside>
         </div>
