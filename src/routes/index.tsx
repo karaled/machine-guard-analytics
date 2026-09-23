@@ -47,7 +47,7 @@ function HomePage() {
                 MachineGuard evaluates current industrial machine operating parameters to identify potential failure risk and support preventive maintenance decisions.
               </p>
               <div className="mt-9 flex flex-wrap gap-3">
-                <Button asChild size="lg"><Link to="/assessment">Start Assessment <ArrowRight size={17} /></Link></Button>
+                <Button asChild size="lg"><Link to="/assessment">Start Prediction <ArrowRight size={17} /></Link></Button>
                 <Button asChild variant="secondary" size="lg"><Link to="/about">Explore System</Link></Button>
               </div>
               <div className="mt-12 flex items-center gap-4 border-t border-border pt-6 text-sm text-muted-foreground">
@@ -91,7 +91,7 @@ function HomePage() {
       <section className="px-6 py-16 md:px-10 lg:px-14 xl:px-20">
         <div className="flex flex-col justify-between gap-7 border-l-4 border-success bg-secondary px-7 py-9 text-secondary-foreground shadow-sm md:flex-row md:items-center md:px-10">
           <div><p className="text-xs font-bold uppercase tracking-[0.14em] text-sidebar-muted">Next action</p><h2 className="mt-2 text-2xl font-bold md:text-3xl">Ready to assess your machine?</h2></div>
-          <Button asChild size="lg"><Link to="/assessment">Run Machine Assessment <ArrowRight size={17} /></Link></Button>
+          <Button asChild size="lg"><Link to="/assessment">Check Machine Condition <ArrowRight size={17} /></Link></Button>
         </div>
       </section>
     </div>
