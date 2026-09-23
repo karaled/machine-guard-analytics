@@ -3,6 +3,7 @@ import { Activity, Home, Info, Menu, ShieldCheck, X } from "lucide-react";
 import { useEffect, useState, type ReactNode } from "react";
 
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 const API_BASE_URL = "http://127.0.0.1:5000";
 
@@ -67,7 +68,10 @@ export function AppShell({ children }: { children: ReactNode }) {
       )}
 
       <aside
-        className={`fixed inset-y-0 left-0 z-50 flex w-72 flex-col bg-sidebar text-sidebar-foreground transition-transform duration-300 lg:translate-x-0 ${menuOpen ? "translate-x-0" : "-translate-x-full"}`}
+        className={cn(
+          "fixed inset-y-0 left-0 z-50 flex w-72 flex-col bg-sidebar text-sidebar-foreground transition-transform duration-300 lg:translate-x-0",
+          menuOpen ? "translate-x-0" : "-translate-x-full",
+        )}
       >
         <div className="flex h-24 items-center justify-between border-b border-sidebar-border px-7">
           <Link to="/" className="flex items-center gap-3" aria-label="MachineGuard home">
