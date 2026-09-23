@@ -99,5 +99,5 @@ function AssessmentPage() {
 function isPrediction(value: unknown): value is Prediction {
   if (!value || typeof value !== "object") return false;
   const item = value as Record<string, unknown>;
-  return (item.failure === 0 || item.failure === 1) && typeof item.failure_probability === "number" && Number.isFinite(item.failure_probability) && typeof item.recommendation === "string";
+  return (item["failure"] === 0 || item["failure"] === 1) && typeof item["failure_probability"] === "number" && Number.isFinite(item["failure_probability"]) && typeof item["recommendation"] === "string";
 }
