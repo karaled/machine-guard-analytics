@@ -68,7 +68,7 @@ function HomePage() {
       </section>
 
       <section className="px-6 py-20 md:px-10 lg:px-14 xl:px-20">
-        <SectionHeading eyebrow="Assessment workflow" title="How MachineGuard Works" text="A clear path from live operating inputs to maintenance guidance." />
+        <SectionHeading eyebrow="PREDICTION WORKFLOW" title="How MachineGuard Works" text="A clear path from live operating inputs to maintenance guidance." />
         <div className="relative mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           <div className="absolute left-[12%] right-[12%] top-10 hidden h-px bg-border xl:block" />
           {steps.map((step) => {
