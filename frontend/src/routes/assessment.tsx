@@ -56,7 +56,7 @@ function AssessmentPage() {
 
     setLoading(true);
     try {
-      const response = await fetch("http://127.0.0.1:5000/predict", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(values) });
+      const response = await fetch("https://machineguard-backend.onrender.com/predict", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(values) });
       const data: unknown = await response.json().catch(() => null);
       if (!response.ok) {
         const apiMessage = data && typeof data === "object" && "error" in data && typeof data.error === "string" ? data.error : "The prediction service returned an error. Please review your inputs and try again.";

@@ -5,7 +5,7 @@ import { useEffect, useState, type ReactNode } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-const API_BASE_URL = "http://127.0.0.1:5000";
+const API_BASE_URL = "https://machineguard-backend.onrender.com";
 
 type HealthState = "checking" | "ready" | "offline";
 

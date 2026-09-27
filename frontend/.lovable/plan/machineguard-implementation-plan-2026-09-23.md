@@ -20,7 +20,7 @@ Build a polished three-page predictive-maintenance application that presents Mac
 
 ## Assessment
 - Create exactly six validated inputs in a responsive two-column form: machine type, air temperature, process temperature, rotational speed, torque, and tool wear.
-- Send the exact JSON field names and selected L/M/H value to `http://127.0.0.1:5000/predict`.
+- Send the exact JSON field names and selected L/M/H value to `https://machineguard-backend.onrender.com/predict`.
 - Add loading, disabled, validation, connection-error, and API-error states without fallback or fabricated predictions.
 - Validate the response shape, then display the backend’s exact `failure`, `failure_probability`, and `recommendation` values.
 - Show the requested normal/risk result treatment, probability bar, assessment summary, and reset action.
