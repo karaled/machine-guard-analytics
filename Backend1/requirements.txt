@@ -6,3 +6,4 @@ scikit-learn==1.6.1
 numpy==2.2.1
 gunicorn
 python-dotenv
+supabase
