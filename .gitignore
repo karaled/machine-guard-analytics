@@ -1,32 +1,19 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+# Python virtual environment
+Backend1/venv/
 
-node_modules
-dist
-dist-ssr
-.output
-.vinxi
-.tanstack/**
-.nitro
-*.local
+# Environment variables / secrets
+Backend1/.env
 
-# Wrangler / Cloudflare
-.wrangler/
-.dev.vars
+# Python cache
+__pycache__/
+*.pyc
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# React
+frontend/node_modules/
+frontend/dist/
+
+# Vercel
+.vercel/
+
+# VS Code
+.vscode/
