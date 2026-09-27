@@ -50,6 +50,8 @@ def load_artifacts():
     model = joblib.load(MODEL_PATH)
     preprocessor = joblib.load(PREPROCESSOR_PATH)
 
+load_artifacts()
+
 def build_input(data):
     required = [
         "type", "air_temperature", "process_temperature",
